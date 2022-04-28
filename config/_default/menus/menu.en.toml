@@ -3,10 +3,10 @@
   url = ""
   weight = -110
 
-[[main]]
-  name = "Archives"
-  url = "post/rich-content/"
-  weight = -109
+#[[main]]
+#  name = "Archives"
+#  url = "post/rich-content/"
+#  weight = -109
 
 # Submenus are done this way: parent -> identifier
 [[main]]
@@ -15,33 +15,37 @@
   weight = -108
 [[main]]
   parent = "Links"
-  name = "LinkedIn"
-  url = "https://www.linkedin.com/"
+  name = "SPIMS"
+  url = "http://spimsv2.sprobe.ph/index.php/site/login"
 [[main]]
   parent = "Links"
-  name = "Twitter"
-  url = "https://twitter.com/"
-
+  name = "Phabricator"
+  url = "https://phabricator.sprobe.ph"
 [[main]]
-  name = "About"
-  url = "about/"
-  weight = -107
+  parent = "Links"
+  name = "SkillsBase"
+  url = "https://phabricator.sprobe.ph"
+
+#[[main]]
+#  name = "About"
+#  url = "about/"
+#  weight = -107
 
 # social menu links
 
-[[social]]
-  name = "github"
-  type = "social"
-  weight = 1
-  url = "https://github.com/#"
+#[[social]]
+#  name = "github"
+#  type = "social"
+#  weight = 1
+#  url = "https://github.com/#"
 [[social]]
   name = "twitter"
   weight = 2
-  url = "https://twitter.com/#"
+  url = "https://twitter.com/SprobeInc"
 [[social]]
   name = "linkedin"
   weight = 3
-  url = "https://www.linkedin.com/in/#"
+  url = "https://www.linkedin.com/company/sprobe"
 [[social]]
   name = "rss"
   weight = 4

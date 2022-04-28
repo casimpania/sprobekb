@@ -1,23 +1,45 @@
-# hugoBasicExample
+*Overview*
 
-This repository offers an example site for [Hugo](https://gohugo.io/) and also it provides the default content for demos hosted on the [Hugo Themes Showcase](https://themes.gohugo.io/).
+This is a proposed lightweight knowlegebase for Sprobe. Powered by [Hugo](https://gohugo.io/) and [Clarity theme](https://github.com/chipzoller/hugo-clarity).
 
-# Using
-
-1. [Install Hugo](https://gohugo.io/overview/installing/)
-2. Clone this repository
-```bash
-git clone https://github.com/gohugoio/hugoBasicExample.git
-cd hugoBasicExample
+*Setup*
+1. Ensure hugo is installed. In Ubuntu (tested in WSL2 as well), do it this way:
 ```
-3. Clone the repository you want to test. If you want to test all Hugo Themes then follow the instructions provided [here](https://github.com/gohugoio/hugoThemes#installing-all-themes)
-4. Run Hugo and select the theme of your choosing
-```bash
-hugo server -t YOURTHEME
+~$ curl -OL https://github.com/gohugoio/hugo/releases/download/v0.96.0/hugo_extended_0.96.0_Linux-64bit.deb
+~$ sudo apt-get install ./hugo_extended_0.96.0_Linux-64bit.deb
 ```
-5. Under `/content/` this repository contains the following:
-- A section called `/post/` with sample markdown content
-- A headless bundle called `homepage` that you may want to use for single page applications. You can find instructions about headless bundles over [here](https://gohugo.io/content-management/page-bundles/#headless-bundle)
-- An `about.md` that is intended to provide the `/about/` page for a theme demo
-6. If you intend to build a theme that does not fit in the content structure provided in this repository, then you are still more than welcome to submit it for review at the [Hugo Themes](https://github.com/gohugoio/hugoThemes/issues) respository
+Check the latest Hugo releases from https://github.com/gohugoio/hugo/releases
 
+For installation details, refer to https://gohugo.io/getting-started/installing/
+
+2. Clone the project.
+```
+~$ git clone --recursive https://github.com/casimpania/sprobekb.git
+```
+
+3. Add new notes
+```
+~$ hugo new posts/your-new-blog-post.md
+```
+
+5. Edit your note file in #3
+
+6. Test your changes locally
+```
+~$ hugo server
+```
+It will probably be accessible as http://localhost:1313/
+
+7. Commit changes to git
+
+Make sure to configure your name and email for git:
+```
+~$ git config user.name "Your Name Here"
+~$ git config user.email "example@email.com"
+```
+
+And commit...
+```
+~$ git commit "My new awesome note!"
+~$ git push
+```
